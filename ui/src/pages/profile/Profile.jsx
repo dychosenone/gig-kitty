@@ -14,13 +14,13 @@ export default function Profile() {
             <div className="profile-cover">
               <img
                 className="profile-cover-img"
-                src=""
-                alt=""
+                src="assets/post/11.jpg"
+                alt="profile-banner"
               />
               <img
                 className="profile-user-pfp"
-                src=""
-                alt=""
+                src="assets/person/1.jpg"
+                alt="profile-dp"
               />
             </div>
             <div className="profile-info">
