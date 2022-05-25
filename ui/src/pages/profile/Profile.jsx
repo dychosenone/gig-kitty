@@ -4,6 +4,8 @@ import Sidenav from "../../components/sidenav/Sidenav";
 import Feed from "../../components/feed/Feed";
 
 export default function Profile() {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   return (
     <>
       <Topnav />
@@ -14,12 +16,12 @@ export default function Profile() {
             <div className="profile-cover">
               <img
                 className="profile-cover-img"
-                src="assets/post/11.jpg"
+                src={`${PF}post/12.jpg`}
                 alt="profile-banner"
               />
               <img
                 className="profile-user-pfp"
-                src="assets/person/1.jpg"
+                src={`${PF}person/2.jpg`}
                 alt="profile-dp"
               />
             </div>

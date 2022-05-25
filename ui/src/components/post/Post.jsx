@@ -8,6 +8,7 @@ import { Users } from '../../dummyData';
 export default function Post( { post }) {
   const [like,setLike] = useState(post.like)
   const [isLiked,setIsLiked] = useState(false)
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const likeHandler =()=>{
     setLike(isLiked ? like-1 : like+1)
@@ -45,7 +46,7 @@ export default function Post( { post }) {
           <div className="post-share-text-container">
             <p className="post-share-text">{post?.desc}</p>
             <img 
-              src={post.photo} 
+              src={PF+post.photo} 
               alt=""
               className="post-share-image"
             />
