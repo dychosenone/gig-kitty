@@ -1,0 +1,718 @@
+/* ------------------- */
+/* TEXT                */
+/* ------------------- */
+
+/* BOLDS               */
+.h1-bold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.h2-bold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.h3-bold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.subtitle-bold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5%;
+}
+
+.body-bold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* MEDIUM              */
+.h1-medium{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.h2-medium{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.h3-medium{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.subtitle-medium{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 5%;
+}
+
+.body-medium{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* SEMIBOLD            */
+.h1-semibold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.h2-semibold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.h3-semibold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.subtitle-semibold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 5%;
+}
+
+.body-semibold{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* REGULAR             */
+.h1-regular{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.h2-regular{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.h3-regular{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.subtitle-regular{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 5%;
+}
+
+.body-regular{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ------------------- */
+/* FONT COLOR          */
+/* ------------------- */
+
+.fc-white{
+    color: white;
+}
+
+.fc-purple{
+    color: #8382F8;
+}
+
+.fc-blue{
+    color: #457BCF;
+}
+
+.fc-green{
+    color: #6CB64A;
+}
+
+.fc-yellow{
+    color: #FAC303;
+}
+
+.fc-red{
+    color: #F57777;
+}
+
+.fc-black{
+    color: #2D343E;
+}
+
+.fc-grey{
+    color: #C8C8C8;
+}
+
+.fc-grey{
+    color: #457BCF;
+}
+
+/* ------------------- */
+/* LINK FILTERT        */
+/* ------------------- */
+
+/* DEFAULT             */
+.filtert-yellow {
+    background-color: #FDF4D3;
+    color: #FAC303;
+    border: 1px solid hsl(47, 90%, 68%);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-purple {
+    background-color: #E1E1F9;
+    color: #8382F8;
+    border: 1px solid #8382F8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-green {
+    background-color: #E6F9DE;
+    color: #6CB64A;
+    border: 1px solid #6CB64A;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-red {
+    background-color: #FEE5E5;
+    color: #F57777;
+    border: 1px solid #F57777;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* ------------------- */
+/* HOVER               */
+.filtert-yellow:hover {
+    background-color: #FDF4D3;
+    color: #FAC303;
+    border: 1px solid #F7D766;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-purple:hover {
+    background-color: #C4C3FC;
+    color: #8382F8;
+    border: 1px solid #C4C3FC;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-green:hover {
+    background-color: #D2F9C1;
+    color: #6CB64A;
+    border: 1px solid #D2F9C1;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-red:hover {
+    background-color: #FFC3C3;
+    color: #F57777;
+    border: 1px solid #FFC3C3;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* ------------------- */
+/* hi @m i dont know how to make it na its always that color if selected */
+/* ACTIVE              */
+.filtert-yellow:active {
+    background-color: #FDF4D3;
+    color: #FAC303;
+    border: 1px solid #FDF4D3;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-purple:active {
+    background-color: #E1E1F9;
+    color: #8382F8;
+    border: 1px solid #E1E1F9;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-green:active {
+    background-color: #E6F9DE;
+    color: #6CB64A;
+    border: 1px solid #E6F9DE;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.filtert-red:active {
+    background-color: #FEE5E5;
+    color: #F57777;
+    border: 1px solid #FEE5E5;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+
+/* ------------------- */
+/* TAGGISH             */
+/* ------------------- */
+.taggish-yellow {
+    background-color: #FDF4D3;
+    color: #FAC303;
+    border: 1px solid #FDF4D3;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.taggish-purple {
+    background-color: #E1E1F9;
+    color: #8382F8;
+    border: 1px solid #E1E1F9;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.taggish-green {
+    background-color: #E6F9DE;
+    color: #6CB64A;
+    border: 1px solid #E6F9DE;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.taggish-red {
+    background-color: #FEE5E5;
+    color: #F57777;
+    border: 1px solid #FEE5E5;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* ------------------- */
+/* BUTTONS             */
+/* ------------------- */
+
+.button-blue {
+    background-color: #327BED;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_word_blue {
+    background-color: #327BED;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_blue {
+    background-color: #327BED;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_blue {
+    color: #327BED;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-orange {
+    background-color: #F58F31;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_word_orange {
+    background-color: #F58F31;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_orange {
+    background-color: #F58F31;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_orange {
+    color: #F58F31;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_grey {
+    color: #C8C8C8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* HOVER               */
+
+.button-blue:hover {
+    background-color: #5E9AF8;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_word_blue:hover {
+    background-color: #5E9AF8;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_blue:hover {
+    background-color: #5E9AF8;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_blue:hover {
+    color: #5E9AF8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-orange:hover {
+    background-color: #FFAB5F;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_word_orange:hover {
+    background-color: #FFAB5F;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_orange:hover {
+    background-color: #FFAB5F;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_orange:hover {
+    color: #FFAB5F;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_grey:hover {
+    color: #DFDFDF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* PRESSED             */
+
+.button-blue:hover {
+    background-color: #2974EA;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_word_blue:hover {
+    background-color: #2974EA;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_blue:hover {
+    background-color: #2974EA;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_blue:hover {
+    color: #2974EA;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-orange:hover {
+    background-color: #F38928;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_word_orange:hover {
+    background-color: #F38928;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-icon_orange:hover {
+    background-color: #FFAB5F;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_orange:hover {
+    color: #F38928;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-word_grey:hover {
+    color: #B4B3B3;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}

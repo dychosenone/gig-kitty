@@ -1,0 +1,8 @@
+.rightbar {
+    flex: 2;
+    height: calc(100vh - 4rem);
+}
+
+.rightbar-wrapper {
+    padding: 0 10px;
+}

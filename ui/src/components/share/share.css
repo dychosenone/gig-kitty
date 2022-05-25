@@ -1,0 +1,77 @@
+.share-container {
+    width: 100%;
+    padding: 0.6rem 0.3rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 1px -3px 53px -34px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -3px 53px -34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -3px 53px -34px rgba(0,0,0,0.75);
+}
+
+.share-wrapper {
+    padding: 1rem;
+}
+
+.share-top-segment {
+    display: flex;
+    align-items: center;
+}
+#share-pfp {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.share-input {
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.share-input:focus {
+    outline: none;
+}
+
+.share-line {
+    margin: 10px;
+    color: rgb(190, 190, 190);
+}
+
+.share-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.share-options {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.4rem;
+}
+
+.share-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#share-media-icon {
+    padding: 0 10px;
+}
+
+.share-upload {
+    background-color: rgb(73, 121, 255);
+    border-radius: 15px;
+    padding: 0.4rem 0.6rem;
+}
+
+.share-upload-text {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+}
