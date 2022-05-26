@@ -13,15 +13,15 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`http://localhost:3000/api/users/${username}`);
-      setUser(res.data);
+      const res = await axios.get(`http://localhost:3000/api/users/user/${username}`);
+      console.log(res.data)
+      setUser(res.data)
     };
-    fetchUser();
-}, [username])
+    fetchUser()
+  }, []);
 
   // http://localhost:3000/api/users?userId=${post.userId}
 
-  
   return (
     <>
       <Topnav />
@@ -32,12 +32,12 @@ export default function Profile() {
             <div className="profile-cover">
               <img
                 className="profile-cover-img"
-                src={user.coverPicture || PF+"person/display-banner.jpg"}
+                src={`${PF}/person/${user.coverPicture}` || `${PF}/person/display-banner.jpg`}
                 alt="profile-banner"
               />
               <img
                 className="profile-user-pfp"
-                src={user.profilePicture || PF+"person/display-avatar.jpg"}
+                src={`${PF}/person/${user.profilePicture}` || `${PF}/person/display-avatar.jpg`}
                 alt="profile-dp"
               />
             </div>

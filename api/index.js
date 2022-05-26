@@ -34,9 +34,10 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
 
-app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
 app.use("/api/posts", postRoute);
+app.use('/api/users', userRoute);
+
 
 app.listen(3000, () => {
     console.log('Backend server is running')

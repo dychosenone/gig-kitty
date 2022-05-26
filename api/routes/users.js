@@ -1,6 +1,21 @@
-const User = require('../models/User');
 const router = require('express').Router();
+const User = require('../models/User');
 const bcrypt = require('bcrypt');
+
+
+// getting users
+router.get("/", async (req, res) => {
+  const userId = req.query.userId;
+  const username = req.query.username;
+  try {
+    const user = await User.findById(userId);
+    const { password, updatedAt, ...other } = user._doc;
+    res.status(200).json(other);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+  
+});
 
 //updating user
 router.put("/:id", async (req, res) => {
@@ -26,7 +41,7 @@ router.put("/:id", async (req, res) => {
         {
         return res.status(403).json("Not your account");
     }
-  });
+});
 
 //deleting user
 router.delete("/:id", async (req, res) => {
@@ -40,40 +55,32 @@ router.delete("/:id", async (req, res) => {
         } else {
             return res.status(403).json("This isn't your account");
         }
-  });
-//getting users
-router.get("/", async (req, res) => {
-  const userId = req.query.userId;
-  const username = req.query.username;
-  try {
-    const user = await User.findById(userId);
-    const { password, updatedAt, ...other } = user._doc;
-    res.status(200).json(other);
-  } catch (err) {
-    res.status(500).json(err);
-  }
 });
 
 //getting user
-router.get("/:id"), async (req, res) => {
-  const id = req.query.id
+router.get("/:id", async (req, res) => {
+  const id = req.params.id
   try {
     const user = await User.findOne({ _id: id });
     res.status(200).json(user);
   } catch(err) {
     res.status(500).json(err);
   }
-};
 
-router.get("/user/:username"), async (req, res) => {
-  const id = req.query.id
+});
+
+router.get("/user/:username", async (req, res) => {
+  const username = req.params.username
+  console.log(username)
   try {
-    const user = await User.findOne({ _id: id });
+    const user = await User.findOne({ username: username });
     res.status(200).json(user);
   } catch(err) {
     res.status(500).json(err);
   }
-};
+
+});
+
 
 
 module.exports = router;
