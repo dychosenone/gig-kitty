@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const helmet = require('helmet');
 const morgan = require('morgan');
+var cors = require('cors')
 
 // routes
 const userRoute = require('./routes/users');
@@ -14,8 +15,19 @@ dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true, useUnifiedTopology: true }, 
     () => {
-    console.log('connected to mongo db')
+    console.log('Connected to Mongo DB')
 });
+
+// cors portion
+app.use(cors())
+
+app.get('http://localhost:3000/:id', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
+
+app.listen(4000, function () {
+  console.log('CORS-enabled web server listening on port 4000')
+})
 
 //middleware portion
 app.use(express.json());
@@ -26,6 +38,6 @@ app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
 app.use("/api/posts", postRoute);
 
-app.listen(5000, () => {
+app.listen(3000, () => {
     console.log('Backend server is running')
 })

@@ -50,7 +50,6 @@
 .share-options {
     display: flex;
     justify-content: space-between;
-    padding-top: 0.4rem;
 }
 
 .share-option {
@@ -60,18 +59,22 @@
     align-content: center;
 }
 
+.share-option-text {
+    font-size: 0.875rem;
+}
+
 #share-media-icon {
     padding: 0 10px;
 }
 
 .share-upload {
-    background-color: rgb(73, 121, 255);
+    background-color: #2D343E;
     border-radius: 15px;
-    padding: 0.4rem 0.6rem;
+    padding: 0.5rem 0.6rem;
 }
 
 .share-upload-text {
     color: #FFF;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
 }

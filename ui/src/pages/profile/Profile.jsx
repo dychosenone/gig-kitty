@@ -2,10 +2,26 @@ import "./profile.css";
 import Topnav from "../../components/topnav/Topnav";
 import Sidenav from "../../components/sidenav/Sidenav";
 import Feed from "../../components/feed/Feed";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from 'react-router';
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [user, setUser] = useState({});
+  const username = useParams().username;
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      const res = await axios.get(`http://localhost:3000/api/users?username=${username}`);
+      setUser(res.data);
+    };
+    fetchUser();
+}, [username])
+
+  // http://localhost:3000/api/users?userId=${post.userId}
+
+  
   return (
     <>
       <Topnav />
@@ -16,22 +32,22 @@ export default function Profile() {
             <div className="profile-cover">
               <img
                 className="profile-cover-img"
-                src={`${PF}post/12.jpg`}
+                src={user.coverPicture || PF+"person/display-banner.jpg"}
                 alt="profile-banner"
               />
               <img
                 className="profile-user-pfp"
-                src={`${PF}person/2.jpg`}
+                src={user.profilePicture || PF+"person/display-avatar.jpg"}
                 alt="profile-dp"
               />
             </div>
             <div className="profile-info">
-                <h4 className="profile-username">First Name</h4>
-                <span className="profile-bio">gm gm gm wagmi fr fr lfg</span>
+                <h4 className="profile-username">{user.username}</h4>
+                <span className="profile-bio">{user.desc}</span>
             </div>
           </div>
           <div className="profile-content">
-            <Feed />
+            <Feed username={username}/>
           </div>
         </div>
       </div>

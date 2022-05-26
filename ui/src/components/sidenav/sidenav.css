@@ -1,8 +1,10 @@
 .sidenav-container {
-    position: sticky;
+    position: fixed;
     height: calc(100vh - 4rem);
     flex: 1.5;
     border-right: 1px solid #cccccc;
+    background-color: #FFF;
+    margin-top: 5.2rem;
 }
 
 .sidenav-wrapper {
@@ -14,7 +16,7 @@
 }
 
 .sidenav-links { 
-    padding: 3rem 0; 
+    padding: 1.5rem; 
     margin-left: 2rem;
 }
 
@@ -42,7 +44,7 @@
     align-content: center;
     padding: 0.75rem 0;
     margin: 1rem;
-
+    display: none;
     background-color: #F3F3F3;
     border-radius: 25px;
 }

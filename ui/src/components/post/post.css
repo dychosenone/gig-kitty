@@ -13,9 +13,6 @@
     padding: 1rem;
 }
 
-
-
-
 .post-top-content {
     display: flex;
     flex-direction: column;
@@ -30,6 +27,8 @@
 .post-top-left-header {
     display:flex;
     align-items: center;
+    text-decoration: none;
+    cursor: pointer;
 }
     
 #post-pfp {
@@ -38,15 +37,25 @@
     border-radius: 50%;
 }
 
+#post-profile-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 .post-top-username {
     font-weight: 500;
     padding: 0 14px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .post-top-dateposted {
     font-weight: 400;
     padding: 0 14px;
     font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .post-share-text-container {

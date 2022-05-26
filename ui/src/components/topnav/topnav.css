@@ -5,6 +5,9 @@
     align-content: center;
     padding: 0.75rem 3rem;
     background-color: #2D343E;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 .profile-wrapper {
@@ -26,4 +29,8 @@
     color: #fff;
     font-weight: 500;
     padding-left: 12px;
+}
+
+.profile-container {
+    margin-right: 5rem;
 }

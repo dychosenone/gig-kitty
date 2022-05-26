@@ -1,19 +1,32 @@
 import VerticalDots from './assets/dots-icon.svg';
 import LikeIcon from './assets/like-icon.svg';
-
+import axios from "axios";
 import './post.css'
-import { useState } from 'react';
-import { Users } from '../../dummyData';
+import { useEffect, useState } from "react";
+import { format } from 'timeago.js';
+import { Link } from 'react-router-dom';
 
 export default function Post( { post }) {
-  const [like,setLike] = useState(post.like)
-  const [isLiked,setIsLiked] = useState(false)
+  const [like,setLike] = useState(post.likes.length);
+  const [isLiked,setIsLiked] = useState(false);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [user,setUser] = useState({});
+
+  useEffect( () => {
+    const fetchUser = async () => {
+      const res = await axios.get(`http://localhost:3000/api/users/628b3b51e9299a7d6a5a843d`);
+      setUser(res.data)
+    };
+    fetchUser();
+
+  }, [post.userId]);
 
   const likeHandler =()=>{
     setLike(isLiked ? like-1 : like+1)
     setIsLiked(!isLiked)
   }
+
+  // http://localhost:3000/api/users?userId=${post.userId}
   
   return (
     <div className="post-container">
@@ -21,19 +34,21 @@ export default function Post( { post }) {
         <div className="post-top-content">
           <div className="post-top-info">
             <div className="post-top-left-info">
-              <div className="post-top-left-header">
-                <img 
-                  src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
-                  alt="pfp"
-                  id="post-pfp"
-                />
-                <div className="post-top-left-header-text">
-                <p className="post-top-username">
-                  {Users.filter((u) => u.id === post?.userId)[0].username}
-                </p>
-                <p className="post-top-dateposted">{post.date}</p>
+              <Link to={`profile/${user.username}`} id="post-profile-link">
+                <div className="post-top-left-header">
+                  <img 
+                    src={user.profilePicture || PF+"person/display-avatar.jpg"}
+                    alt="pfp"
+                    id="post-pfp"
+                  />
+                  <div className="post-top-left-header-text">
+                  <p className="post-top-username">
+                    {user.username} 
+                  </p>
+                  <p className="post-top-dateposted">{format(post.createdAt)}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="post-top-icon">
               <img 
@@ -46,7 +61,7 @@ export default function Post( { post }) {
           <div className="post-share-text-container">
             <p className="post-share-text">{post?.desc}</p>
             <img 
-              src={PF+post.photo} 
+              src={PF+post.img} 
               alt=""
               className="post-share-image"
             />
@@ -59,7 +74,7 @@ export default function Post( { post }) {
               className="like-icon"
               onClick={likeHandler}
               />
-              <span className="likes-amount">{like} people reacted</span>
+              <span className="likes-amount">{like} reaction/s!</span>
             </div>
             <div className="post-bottom-right">
               <div className="post-bottom-right-comment-label">{post.like} Comments</div>

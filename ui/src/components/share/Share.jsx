@@ -11,7 +11,7 @@ export default function Share() {
                 <img src={Kianna} alt="pfp" id="share-pfp"/>
                 <input 
                     className="share-input"
-                    placeholder="What have you got, gym bud?" 
+                    placeholder="What's on your mind?" 
                 />
             </div>
             <hr className="share-line"/>
@@ -27,7 +27,7 @@ export default function Share() {
                     </div>
                 </div>
                 <div className ="share-upload">
-                    <p className="share-upload-text">Share your thoughts!</p>
+                    <p className="share-upload-text">Share</p>
                 </div>
             </div>
         </div>

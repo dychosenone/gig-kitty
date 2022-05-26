@@ -9,11 +9,16 @@
 
 .profile-content-wrapper{
     flex: 9;
+    margin-top: 6rem;
 }
 
 .profile-cover{
     height: 320px;
     position: relative;
+}
+
+.profile-content-top {
+    margin-left: 15rem;
 }
 
 .profile-cover-img{
