@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
+const token = require('../middleware/verify');
 
 
 // getting users
@@ -58,7 +59,7 @@ router.delete("/:id", async (req, res) => {
 });
 
 //getting user
-router.get("/:id", async (req, res) => {
+router.get("/userId/:id", token.authenticateToken, async (req, res) => {
   const id = req.params.id
   try {
     const user = await User.findOne({ _id: id });
@@ -69,18 +70,41 @@ router.get("/:id", async (req, res) => {
 
 });
 
+// sample code to generate a token
+router.get("/token", async (req, res) => {
+
+  const data = {
+    username: "helloworld",
+    userId: "12345"
+  }
+
+
+  try {
+    const generatedToken = await token.generateAccessToken(data);
+    res.status(200).json({token : generatedToken});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+  
+
+});
+
+// sample code to validate a token
+router.get("/validateToken", token.authenticateToken, async (req, res) => {
+
+  res.status(200).json({validate: 'validated'})
+
+})
+
 router.get("/user/:username", async (req, res) => {
   const username = req.params.username
   console.log(username)
   try {
-    const user = await User.findOne({ username: username });
     res.status(200).json(user);
   } catch(err) {
     res.status(500).json(err);
   }
 
 });
-
-
 
 module.exports = router;

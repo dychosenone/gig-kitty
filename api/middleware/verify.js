@@ -1,11 +1,9 @@
 // import dotenv module for access token secret value
-import dotenv from 'dotenv-safe';
+const dotenv = require('dotenv');
 
 // import jsonwebtoken module for jwt functions
-import jwt from 'jsonwebtoken';
+const jwt = require('jsonwebtoken');
 
-// get .env config values
-dotenv.config();
 
 // jwtoken middleware object for session control and management methods
 const token = {
@@ -41,11 +39,10 @@ const token = {
   generateAccessToken: (data) => {
     // generate access token given the data
     const accessToken = jwt.sign(data, process.env.ACCESS_TOKEN_SECRET);
-
     // return the generated access token
     return accessToken;
   },
 };
 
 // export token middleware
-export default token;
+module.exports = token;
